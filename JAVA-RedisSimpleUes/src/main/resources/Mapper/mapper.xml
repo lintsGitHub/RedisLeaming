@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.lint.RedisCacheForJava.NewsDAO">
+    <insert id="addNews">
+      insert into news value (#{title},#{body});
+    </insert>
+    <select id="getnews" resultType="priv.lint.RedisCacheForJava.News">
+
+    </select>
+</mapper>
